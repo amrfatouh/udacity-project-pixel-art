@@ -3,21 +3,21 @@ var spans = [];
 function makeGrid() {
   event.preventDefault();
 
-  if(spans != []) {
-    
-  }
-
   var height = document.getElementById("inputHeight").value;
   var width = document.getElementById("inputWidth").value;
+  var table = document.getElementById('pixelCanvas');
+
+  table.innerHTML = null;
 
   for (var i = 0; i < height; i++) {
+    var tr = document.createElement('tr');
     for (var j = 0; j < width; j++) {
-      var span = document.createElement('span');
-      span.onclick = handleClick;
-      document.body.appendChild(span);
-      spans.push(span);
+      var td = document.createElement('td');
+      td.onclick = handleClick;
+      tr.appendChild(td);
+      // spans.push(span);
     }
-    document.body.appendChild(document.createElement('br'));
+    table.appendChild(tr);
   }
 }
 

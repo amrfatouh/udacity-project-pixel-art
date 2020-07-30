@@ -1,5 +1,3 @@
-var spans = [];
-
 function makeGrid() {
   event.preventDefault();
 
@@ -15,7 +13,6 @@ function makeGrid() {
       var td = document.createElement('td');
       td.onclick = handleClick;
       tr.appendChild(td);
-      // spans.push(span);
     }
     table.appendChild(tr);
   }

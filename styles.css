@@ -38,16 +38,3 @@ body {
   input[type="number"] {
     width: 6em;
   }
-  
-  span {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    padding: 0;
-    border: 1px solid black;
-  }
-  br {
-    margin: 0;
-    padding: 0;
-  }
